@@ -51,7 +51,7 @@ body{
 
 .centertext hr{
     width: 30px;
-    animation: textanimation3 10s ease-in-out;
+    animation: textanimation3 10s linear infinite;
 }
 
 @keyframes textanimation3{
@@ -129,3 +129,62 @@ body{
         width:11ch;
     }
 }
+
+/* SLIDING ANMATION TUTORIAL */
+.content{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-wrapper{
+    font-size: 40px;
+    color: #aaa;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+}
+
+.slider{
+    height: 50px;
+    padding-left: 15px;
+    overflow: hidden;
+}
+.slider div{
+    color:white;
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 2px 15px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+.slider-textA{
+    background-color: lightgreen;
+    animation: slide 7s linear infinite ;
+
+}
+.slider-textB{
+    background-color:skyblue;
+    
+}.slider-textC {
+    background-color: lightcoral;
+    
+}
+
+@keyframes slide{
+    0%{margin-top:-300px;}
+    20%{margin-top:-300px;}
+    33%{margin-top:-200px;}
+    55%{margin-top:-200px;}
+    71%{margin-top:-100px;}
+    60%{margin-top:-100px;}
+    77%{margin-top:0px;}
+    100%{margin-top:0px;}
+}
+
