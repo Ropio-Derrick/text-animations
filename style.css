@@ -91,3 +91,41 @@ body{
     0%{width: 0ch;}
     100%{width: 21ch;}
 }
+
+/* DOING TEXT ANIMATION EFFECT  */
+.txteffect h1{
+    
+    margin-left: 15%;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 14vh;
+    color: #000000;
+    -webkit-text-stroke:0.2vh #ff0000;
+    text-transform: uppercase;
+
+
+}
+
+.txteffect h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: ;
+    height: 100%;
+    color: #ddd;
+    -webkit-text-stroke:0vh #ff0000;
+    border-right: 2px solid #ddd;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+
+}
+
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width:11ch;
+    }
+}
