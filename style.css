@@ -76,3 +76,18 @@ body{
   
 }
 
+/* diong text typing animation */
+.anim{
+    margin-left: 15%;
+    color: white;
+    font-size: 60px;
+    animation: type 4s ease;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+@keyframes type{
+    0%{width: 0ch;}
+    100%{width: 21ch;}
+}
