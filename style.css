@@ -1,328 +1,78 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-  
 }
 
 body{
-    background:url(black.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #000000;
 }
 
-/* topbar */
-
-.topbar{
-    display: flex;
-    justify-content: flex-end;
-    background-color:rgba(0,0,0,0.7);
-    align-items: center;
-    padding :10px 0px 10px 0px ;
+.centertext{
+    margin: 200px auto;
+    width: 800px;
 }
 
-.brand{
-    font-size: 120%;
-    color:rgb(4, 173, 185);
-    padding-left: 30px;
-}
- 
-.btn{
-    padding-right: 30px;
-}
-
-.btnlog{
-    padding: 4px 15px 4px 15px;
-    font-size:17px;
-    font-weight: 500;
-    border: 1px solid#ddd;
-    color: #ddd;
-    background-color:rgb(2, 89, 95) ;
-    border-radius: 5px;
-}
-
-/* nav-bar */
-.navbar{
-    width: 100%;
-    align-items: center;
-    padding: 10px;
-
-}
-.navbar ul{
- 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    background-color:rgba(0,0,0,0.7);
-    color:transparent ;
-}
-
-.navbar ul a{
-    margin-right: 50px;
-    margin-left: 50px;
-    text-decoration: none;
-    color: #ddd;
-    font-size: 20px;
-}
-
-a:hover{
-    border-bottom: 1px solid#ddd ;
-}
-
-
-/* section */
-section{
-    display: flex;
-    flex-direction: column;
-}
-
-.title{
-    margin-top: 100px;
-    color: rgb(2, 89, 95);
-    font-size: 670%;
-    font-style: italic;
-    font-family: fantasy;
-    text-shadow: #ddd 2px;
-    margin-left: 10%;
-}
-
-.content{
-    margin-top: 10px;
+.centertext h1{
+    font-size: 80px;
+    color: #fff;
     text-align: center;
-    color:#ddd1;
-    font-size: 170%;
-    font-style: italic;
-    font-family: fantasy;
-    text-shadow: #ddd 2px;
-    margin-left: 10%;
-    width: 50%;
+    font-weight: bold;
+    animation: textanimation1 1s ease-in-out;
 }
 
-.content:hover{
-    color: #ddd;
-    transition: color 3s;
+@keyframes textanimation1{
+    0%{
+        letter-spacing: 20px;
+        font-size: 60px;
+    }
+    100%{
+        letter-spacing: 1px;
+        font-size: 80px;
+    }
 }
 
-
-/* the services */
-
-.services{
-    padding: 40px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.web{
-    flex-wrap: wrap;
-    align-items: center;
-    background-color:rgb(7, 5, 5);
-    color:#ddd;
-    width: 300px;
-    height: 650px;
-    border-radius: 15px;
-}
-
-.web:hover{
-    zoom: 100.3%;
-    background-color:rgb(6, 17, 16)  ;
-    color:white; 
-}
-
-h2{
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    background-color: rgb(24, 24, 24) ;
-    color: white;
+.centertext p{
+    font-size: 30px;
+    color: #ff0000;
     text-align: center;
-    border-radius: 5px;
-    height: 90px;
-
+    font-weight: bold;
+    animation: textanimation2 1s ease-in-out;
 }
 
-.h{
-    align-items: center;
-     color:Black;
-     border: 1px;
-     border-color: black;
-     border-radius: 5px;
-     background-color:rgb(14, 197, 173) ;
-     margin-top: 30px;
-     margin-right: 20%;
-     width: 60%;
-     margin-left: 20%;
-     font-size: 160%;
-     font-weight: 520;
-     padding-right: 30px;
-     padding-left: 30px;
-     padding-top: 10px;
-     padding-bottom: 10px;
- }
-
-.h:hover{ 
-    transition:zoom 0.5s;
-    background-color: black;
-    border: 1px white;
-}
-
-p{
-    padding: 10px         ;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-bottom:1px solid gray;
-    text-align: center;
-}
-
-.last{
-    padding: 10px;
-    text-align: center; 
-}
-
-
-
-@media screen and (max-width:800px){
-    .web{
-        flex-direction: column  ;
-        align-items: center;
-        background-color:black;
-        color: #ddd;
-        width: 150px;
-        height: 650px;
-        border-radius: 15px;
+@keyframes textanimation2{
+    0%{
+        transform: scale(0);
     }
-
-
-    h2{
-        font-size: 115%;
-        display: flex;
-        justify-content: center;
-        background-color:grey;
-        color: white;
-        text-align: center;
-        border-radius: 5px;
-        height: 90px;
-    
-    }
-    
-    .h{
-        
-         color: grey;
-         border: 1px;
-         border-color: black;
-         border-radius: 3px;
-         background-color:#ddd  ;
-         transform: skewY(7deg);
-         float: right;
-         font-size: 90%;
-         font-weight: 500;
-     }
-    
-    .h:hover{
-        zoom: 103%; 
-    }
-
-    p{
-        padding: 5px   ;
-        margin-left: 10%;
-        margin-right: 10%;
-       
-       
-    }
-    
-    .last{
-        padding: 9px;
-        text-align: center; 
-    }
-    
-    .line{
-        padding: 10px;
-        background-color:whitesmoke;
-        transform: skewY(-7deg);
+    100%{
+        letter-spacing: 1px;
     }
 }
 
-/* form */
-
-
-
-.login{
-    color: white;
-    background-color:rgb(4, 173, 185);
-    padding: 10px 5px 10px 5px ;
-}
-.form{ 
-    background-color:rgba(0,0,0,0.7)  ;
-    margin-left: 30%;
-    margin-right: 30%;
-    
-    
+.centertext hr{
+    width: 30px;
+    animation: textanimation3 10s ease-in-out;
 }
 
-.form h1{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 300%;
-    color:#f7941d;
+@keyframes textanimation3{
+    0%{
+        width: 60px;
+    }
+    20%{
+        width: 200px;
+    }
+    40%{
+        width: 130px;
+    }
+    60%{
+        width: 310px;
+    }
+    80%{
+        width: 500px;
+    }
+    100%{
+        width: 400px;
+    }
+  
 }
-
-.form .lab-em{
-    margin-top: 20px;
-    color: rgb(4, 173, 185);
-    font-size: 170%;
-    font-weight: 400 ;
-    margin-left:20% ;
-}
-
-.form .inside{
-    margin-top: 10px;
-    background-color: rgb(212, 212, 212);
-    color: black;
-    font-size: 130%;
-    font-weight: 100 ;
-    border: none;
-    margin-left:20% ;
-    width: 60%;
-}
-
-.form .btns{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.form .btnsbt{
-    background-color:rgb(0, 46, 58) ;
-    color: #f7941d;
-}
-
-.form .btns .btnsbt{
-    margin-top: 5%;
-    background-color:rgb(4, 173, 185) ;
-    color: black;
-    font-size: 150%;
-    font-weight: 600;
-    padding-top:10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-    margin-left: 34%;
-    width: 30%;
-    float: right;
-}
-
-.form .btns .btncls{
-    margin-top: 5%;
-    background-color:rgb(4, 173, 185) ;
-    color: rgb(192, 42, 42);
-    font-size: 130%;
-    font-weight: 100;
-    padding-top:5px;
-    padding-bottom: 5px;
-    border-radius: 5px;
-    margin-left: 40%;
-    width: 20%;
-    float: right;
-
-}    
 
